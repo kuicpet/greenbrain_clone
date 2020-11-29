@@ -14,11 +14,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     justify-content: center;
     width: 100%;
     font-family: "Muli", sans-serif;
-    background-image: radial-gradient(circle, #dff0d8, #dbf6ee, #e5f9fd, #f5fbff, #ffffff);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -29,8 +27,160 @@ main {
     min-height: 100vh;
     width: 100%;
 }
-/**upload*/
-/**upload*/
+/**header*/
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    background-color: var(--whiteText);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.navbar {
+    width: 100%;
+    padding: 1rem;
+   
+}
+.navbar a {
+    color: #000000;
+    text-transform: lowercase;
+}
+#logo {
+    margin-left: auto;
+    font-size: 1.25rem;
+    white-space: nowrap;
+}
+#login {
+    color: #000000;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border: 1px solid #6c757d;
+    border-radius: 0.25rem;
+    text-transform: capitalize;
+    margin-right: 1rem;
+}
+#login:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+/**intro*/
+.intro {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg,transparent 20%,#ccc 25%,transparent 0),linear-gradient(-45deg,transparent 20%,#ccc 25%,transparent 0),linear-gradient(-45deg,transparent 75%,#ccc 80%,transparent 0),radial-gradient(#efe 2px,transparent 0);
+    background-size: 18px 18px,18px 18px;
+    min-height: 100vh;
+}
+.intro-1 {
+    position: relative;
+    width: 50%;
+    padding: 0 6%;
+}
+.intro-2{
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform: translateY(0);
+}
+.intro-2 img {
+    width: 65%;
+}
+.heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 150%;
+    margin-bottom: 7%;
+}
+.intro-1 ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #3f3356;
+}
+.intro-1 li {
+    margin: 0;
+    font-size: 1.3rem;
+}
+.intro-1 li::before {
+    content: "\2713";
+    color: red;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+    font-weight: 600;
+}
+.intro-1 a {
+    display: inline-block;
+    padding: 3% 6%;
+    background-color: #219988;
+    border-radius: 5px;
+    color: var(--whiteText);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 2%;
+}
+/**productive*/
+.productive {
+    position: relative;
+    width: 100%;
+    padding: 5%;
+    background-color: #e4f9f5;
+}
+.productive h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 5%;
+    padding: 0;
+    background-color: #e4f9f5;
+    line-height: 1.2;
+}
+.productive-items {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+.productive-items .card {
+    background: var(--whiteText);
+    height: 300px;
+    margin: 5%;
+    border-radius: 5px;
+    padding: 3% 7%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    color: #3f3356;
+}
+.card img {
+    display: inline-block;
+    width: 20%;
+}
+.card h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 3% 0;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    background-color: transparent;
+    text-align: justify;
+}
+.card p {
+    text-align: justify;
+}
 /**stats*/
 .stats {
     z-index: 2;
@@ -59,6 +209,8 @@ main {
     color: #000000;
     font-weight: 500;
     font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 .lecture-notes h1 {
     color: #fe7e8a;
@@ -142,6 +294,24 @@ main {
     }
     .upload-text {
         font-size: 1.2rem;
+    }
+    .stats {
+        padding: 5%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1rem;
+    }
+    .productive-items {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .intro-1 {
+        width: 100%;
+        padding: 7% 8% 12%;
+    }
+    .intro-1 li {
+        margin: 0;
+    }
+    .intro-2 {
+        display: none;
     }
 }
 .links-1, .links-2 {
