@@ -448,6 +448,20 @@ a {
         grid-gap: 1rem;
     }
 }
+@media screen and (max-width: 360px){
+    .cards ul {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0 auto;
+    }
+    .filter-container {
+        width: 100%;
+        margin-top: 0;
+    }
+    .filter-btn {
+        margin: 5%;
+    }
+}
 .cards li {
     margin-bottom: 0.25rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
