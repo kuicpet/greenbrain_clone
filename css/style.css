@@ -95,6 +95,15 @@ main {
     justify-content: center;
     overflow: hidden;
     transform: translateY(0);
+    animation: float ease-in-out infinite;
+    animation-name: float;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
 }
 .intro-2 img {
     width: 65%;
