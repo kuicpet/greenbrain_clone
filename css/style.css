@@ -64,7 +64,7 @@ main {
     border: 1px solid #6c757d;
     border-radius: 0.25rem;
     text-transform: capitalize;
-    margin-right: 3.5rem;
+    margin-right: 1rem;
 }
 #login:hover {
     color: #0056b3;
