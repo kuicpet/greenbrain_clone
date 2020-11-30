@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 1rem;
+    background-color: #88edcf;
+    font-family: "Muli", sans-serif;
+}
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100xh;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 98%;
+    width: 480px;
+    background: #fff;
+    padding: 5vh 0 0;
+    margin: 2% 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+.email {
+	border: 1px solid #eee;
+	border-radius: 4px;
+	margin: 15px 0;
+	padding: 7px;
+	min-width: 80%;
+}
+.icon {
+    width: 10%;
+    border-right: 1px solid #eee;
+    color: #888;
+}
+svg {
+    vertical-align: middle;
+}
+input {
+    width: calc(90% - 10px);
+    border: none;
+    padding: 7px;
+    margin-left: 7px;
+    background: #f7f8fb;
+    overflow: visible;
+}
+.password, .login-button {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin: 15px 0;
+    padding: 7px;
+    min-width: 80%;
+}
+.login-button {
+    position: relative;
+    margin-bottom: 5vh;
+}
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #40e0d0;
+    background: #88edcf;
+    font-weight: 500;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+.signup-link {
+    position: relative;
+    bottom: 0;
+    padding: 1rem 0 2.5rem;
+    background: #eee;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.signup-link span:first-child {
+    width: 65%;
+    padding-right: 10px;
+    text-align: right;
+}
+.signup-link span:nth-child(2) a {
+    width: 35%;
+    padding-left: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #000000;
+}
+.forgot {
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-align: right;
+    font-size: 1.1rem;
+}
+.forgot a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+.forgot a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
