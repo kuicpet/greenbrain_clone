@@ -357,3 +357,124 @@ a {
 .socials a {
     padding: 3% 7%;
 }
+/**Projects*/
+.project {
+    background-image: radial-gradient(circle, #dff0d8, #dbf6ee, #e5f9fd, #f5fbff, #ffffff);
+}
+.tabs {
+    margin: 0;
+    width: 100%;
+    margin-top: 2%;
+}
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+    margin-top: 0;
+    width: 100%;
+}
+.nav-items {
+    margin-bottom: -1px;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    
+}
+.nav-items:hover {
+    color: #0056b3;
+    border: 1px solid #e9ecef;
+}
+.nav-link {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.active {
+    border-bottom: 2px solid #28aa45;
+    color: #28aa45;
+    font-weight: 500;
+}
+.activeItem {
+    color: #28aa45;
+}
+.activeItem:hover {
+    background-color: #28aa45;
+    color: #fff;
+}
+.filter {
+    margin: 0 5%;
+    display: flex;
+    width: 100%;
+}
+.filter-container {
+    position: relative;
+    display: flex;
+    width: 60%;
+    margin-top: 20px;
+    min-width: 165px;
+}
+.filter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 0.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    margin: 2rem 3rem;
+}
+.mr-2 {
+    margin-right: 0.5rem;
+}
+.details {
+    width: 90%;
+    margin: 0 auto;
+}
+.cards {
+    width: 100%;
+}
+.cards ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+}
+@media screen and (max-width: 799px){
+    .cards ul {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1rem;
+    }
+}
+.cards li {
+    margin-bottom: 0.25rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    background-color: var(--whiteText);
+    border-radius: 0.25rem;
+    padding-top: 0;
+}
+.cards h4 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.9rem 5px;
+    border-bottom: 1px solid #eee;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(121, 18, 118);
+}
+.cards p {
+    text-align: center;
+    padding: 5px;
+    margin-top: 0;
+}
+.course-title {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}

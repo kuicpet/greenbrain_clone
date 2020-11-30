@@ -141,7 +141,8 @@ input {
 }
 label {
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
+    margin-left: 7px;
     font-size: 0.9rem;
     font-weight: 500;
 }
