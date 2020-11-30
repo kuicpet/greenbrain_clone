@@ -548,3 +548,10 @@ a {
         grid-gap: 1rem;
     }
 }
+.about, .how-it-works {
+    background: #e4f8f5;
+    width: 100%;
+    color: #1a051e;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
